@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#3e2723,#5d4037,#8d6e63);
+
+}
+
+.container{
+
+    width:900px;
+    height:550px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+}
+
+/* LEFT */
+
+.form-section{
+
+    width:50%;
+
+    padding:60px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.form-section h2{
+
+    color:#4E342E;
+    font-size:35px;
+    margin-bottom:10px;
+
+}
+
+.form-section p{
+
+    color:#777;
+    margin-bottom:30px;
+
+}
+
+.input-box{
+
+    position:relative;
+    margin-bottom:18px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+    left:15px;
+    top:17px;
+
+    color:#8D6E63;
+
+}
+
+.input-box input{
+
+    width:100%;
+    padding:15px 15px 15px 45px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    border-color:#8B4513;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#8B4513;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#5d2f0a;
+
+}
+
+.login{
+
+    margin-top:20px;
+    text-align:center;
+}
+
+.login a{
+
+    color:#8B4513;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+/* RIGHT */
+
+.image-section{
+
+    width:50%;
+
+    position:relative;
+
+}
+
+.image-section img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(60,30,10,.35);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    color:white;
+
+}
+
+.overlay h1{
+
+    font-size:55px;
+    letter-spacing:5px;
+
+}
+
+.overlay p{
+
+    margin-top:10px;
+    font-size:20px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.container{
+
+    width:95%;
+    height:auto;
+
+    flex-direction:column;
+
+}
+
+.form-section,
+.image-section{
+
+    width:100%;
+
+}
+
+.image-section{
+
+    height:300px;
+
+}
+}
+/* Back Button */
+
+.back-btn{
+    position:absolute;
+    top:25px;
+    left:25px;
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 22px;
+
+    background:#8B4513;
+    color:#fff;
+    float: right;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:0.3s ease;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    background:#5D2F0A;
+    color:#fff;
+    transform:translateX(-5px);
+}
+
+.back-btn i{
+    font-size:15px;
+}
+
